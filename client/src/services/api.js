@@ -3,7 +3,7 @@ import axios from "axios";
 const API = axios.create({
   baseURL:
     import.meta.env.VITE_API_URL ||
-    "http://localhost:5000/api",
+    "https://learning-portal-pva1.onrender.com",
 
   headers: {
     "Content-Type": "application/json",
@@ -37,7 +37,7 @@ export const serverUrl = (
 ) => {
   const base =
     import.meta.env.VITE_SERVER_URL ||
-    "http://localhost:5000";
+    "https://learning-portal-pva1.onrender.com";
 
   return `${base}${path}`;
 };
